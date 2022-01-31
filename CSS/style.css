@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    background-image: linear-gradient(267deg,#A9F1DF , #FFBBBB
+    );
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    top:0;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    opacity:0.8;
+    
+
+}
+nav ul div{
+    display: flex;
+    flex-direction: row;
+}
+nav ul li{
+    cursor: pointer;
+}
+nav ul li a{
+   text-decoration:none;
+   color: aliceblue;
+}
+nav li a:hover{
+    color:rgb(0, 199, 199);
+
+}
+.brand > a:nth-child(1) {
+    font-size: 38px;
+    font-weight: 800;
+  color:rgb(173 238 221);
+  box-shadow: rgb(208, 215, 223);
+}
+
+/* bottom */
+.bottom{
+    position: sticky;
+    bottom: 0;
+    background-color: rgb(0, 0, 0);
+    opacity:0.8;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    height:19vh;
+    padding:0px;
+}
+#myProgressBar{
+    width: 40vw; 
+    cursor: pointer;
+}
+.icons{
+    margin-top: 14px; 
+}
+.icons i:hover{
+    cursor: pointer;
+    color:rgb(0, 199, 199);
+}
+.songInfo{
+    position: absolute;
+    left: 5vw;
+    font-family: 'Varela Round', sans-serif;
+}
+.bottomImg{
+    position: absolute;
+    right: 5vw;
+}
+#masterSongName{
+    margin-top: 15px;
+    margin-bottom: 5px;
+
+}
+
+.gif{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+
+/* container */
+.container{
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    margin: 103px auto;
+    width: 90%;
+    /* border: 2px solid rgba(0, 0, 0, 0.459); */
+    box-shadow:rgb(123 76 76) 20px 12px 15px;
+    box-shadow: thistle;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: linear-gradient(267deg, #A9F1DF , #FFBBBB);
+}
+.songItemContainer{
+    margin-top: 24px;
+}
+.fa-heart:before {
+    content: "\f004";
+    padding-right: 10px;
+}
+.songItemPlay{
+    cursor: pointer;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: rgb(0, 199, 199);
+    color: rgb(255, 255, 255);
+    margin: 12px 0;
+    justify-content:space-evenly;
+    align-items: center;
+    border-radius: 34px;
+    box-shadow:rgb(29 19 19 / 39%) 20px 12px 15px;
+}
+
+.songItem img{
+    width: 43px;
+    margin: 0 0px;
+    border-radius: 34px;
+}
+.songItem:hover{
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+    background-color:rgb(249 190 189);
+    
+}
+.songList{
+    min-width: 70vh;
+    /* box-shadow:rgb(123 76 76) 20px 12px 15px; */
+}
+@media only screen and (max-width:500px){
+    .songList{
+        min-width: auto;
+    }
+    .songBanner img{
+        display: none;
+    }
+    .container{
+        box-shadow:none;
+        background-image: linear-gradient(267deg, #ee402c , #0bdf4a66);
+    }
+    .songItem{
+        margin: 5px 0;
+        box-shadow:rgba(38, 37, 24, 0.22) 20px 12px 15px;
+    }
+    .songItemContainer{
+        margin-top: 14px;
+    }
+    .heading {
+
+        font-size: 26px;
+    }
+    .bottom{
+        height:15vh;
+       
+    } 
+    .songInfo{
+        position: absolute;
+        left: 1vw;
+        font-family: 'Varela Round', sans-serif;
+    }
+    .bottomImg{
+        position: absolute;
+        right: 0vw;
+    }
+    
+}
+@media only screen and (min-width: 500px) and (max-width: 1098px) {
+    .songList{
+        min-width: auto;
+    } 
+    .songBanner img{
+        max-width: 270px;
+        min-width:269px;
+    }
+    .bottom{
+        height:13vh; 
+    } 
+    .icons{
+        margin-top:4px; 
+    }
+}
+.songBanner img{
+  width:400px;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 25px;
+
+}
+
+
+.heading{
+    text-align: center;
+    
+}
